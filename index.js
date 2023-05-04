@@ -1,11 +1,4 @@
 
-import chalk from 'chalk';
-
-const error = chalk.bold.red;
-const warning = chalk.hex('#FFA500'); // Orange color
-
-console.log(error('Error!'));
-console.log(warning('Warning!'));
 
 var readlineSync = require('readline-sync');
 if (readlineSync.keyInYN('Do you want to play this game!!')) {
@@ -52,7 +45,7 @@ quest=[{
     play(quest[i].answer,ans);
     console.log(User+" your score is:"+score)
   }
-    console.log("GAME OVER,YOUR FINAL SCORE: "+score)
+    console.log("GAME OVER ")
 
   }
   game()
@@ -60,6 +53,6 @@ quest=[{
 }
  else {
   // Another key was pressed.
-  console.log('Game Over');
+  console.log('Searching.....');
   
 }
