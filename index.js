@@ -1,4 +1,12 @@
 
+import chalk from 'chalk';
+
+const error = chalk.bold.red;
+const warning = chalk.hex('#FFA500'); // Orange color
+
+console.log(error('Error!'));
+console.log(warning('Warning!'));
+
 var readlineSync = require('readline-sync');
 if (readlineSync.keyInYN('Do you want to play this game!!')) {
  var User=readlineSync.question("Enter your name !!");
